@@ -14,10 +14,15 @@ console.log(document.domain) ;
 // // document.all [10].textContent
 // console.log(document.forms [0]);
 let header = document.getElementById("main-header") ;
-console.log(header) ;
+//console.log(header) ;
 let head = document.getElementById("header-title") ;
-console.log(head) ;
+//console.log(head) ;
 header.style.borderBottom = "solid 10px #000" ;
 let change = document.getElementById("tit") ;
 change.style.fontWeight= "bold" ;
 change.style.color ="#008000"
+let item = document.getElementsByClassName("list-group-item") ;
+item[3].style.backgroundColor = 'green' ;
+for(let i=0 ;i<item.length;i++) {
+    item[i].style.fontWeight = 'bold' ;
+}
