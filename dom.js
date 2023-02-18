@@ -13,16 +13,22 @@ console.log(document.domain) ;
 // console.log(document.all [10]);
 // // document.all [10].textContent
 // console.log(document.forms [0]);
-let header = document.getElementById("main-header") ;
+//let header = document.getElementById("main-header") ;
 //console.log(header) ;
-let head = document.getElementById("header-title") ;
+//let head = document.getElementById("header-title") ;
 //console.log(head) ;
-header.style.borderBottom = "solid 10px #000" ;
-let change = document.getElementById("tit") ;
-change.style.fontWeight= "bold" ;
-change.style.color ="#008000"
-let item = document.getElementsByClassName("list-group-item") ;
-item[3].style.backgroundColor = 'green' ;
-for(let i=0 ;i<item.length;i++) {
-    item[i].style.fontWeight = 'bold' ;
+//header.style.borderBottom = "solid 10px #000" ;
+//let change = document.getElementById("tit") ;
+//change.style.fontWeight= "bold" ;
+//change.style.color ="#008000"
+//let item = document.getElementsByClassName("list-group-item") ;
+//item[3].style.backgroundColor = 'green' ;
+//for(let i=0 ;i<item.length;i++) {
+//    item[i].style.fontWeight = 'bold' ; }
+document.querySelector('.list-group-item:nth-child(2)').style.backgroundColor = 'green' ;
+//document.querySelector('.list-group-item:nth-child(3)').style.display ='none';
+
+const items = document.querySelectorAll('.list-group-item:nth-child(odd)');
+for (let i = 0; i < items.length; i++) {
+  items[i].style.backgroundColor = 'green';
 }
