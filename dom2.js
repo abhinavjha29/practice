@@ -32,3 +32,24 @@ for (let i = 0; i < itemsList.children.length; i++) {
   editButton.innerText = 'Edit';
   itemsList.children[i].appendChild(editButton);
 }
+
+// to create extra input //
+// let container = document.getElementsByClassName('card card-body') ;
+// let newinput = document.createElement('input') ;
+// newinput.setAttribute('type' , 'text') ;
+// newinput.setAttribute("name", "newInput");
+// //newinput.setAttribute("value", "");
+// newinput.appendChild(container) ;
+// newinput.className = "form-control mr-2" ;
+
+
+// Select the submit button element
+const submitBtn = document.querySelector('#addForm input[type="submit"]');
+
+// Create a new input element
+const newInput = document.createElement('input');
+newInput.setAttribute('type', 'text');
+newInput.setAttribute('class', 'form-control mr-2');
+
+// Add the new input element as a sibling of the submit button
+submitBtn.parentNode.appendChild(newInput);
